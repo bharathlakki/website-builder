@@ -1,0 +1,43 @@
+body {
+  margin: 0; font-family: 'Segoe UI', sans-serif;
+  background: #f4f6f8; color: #333;
+  transition: background 0.3s, color 0.3s;
+}
+body.dark {
+  background: #121212; color: #eee;
+}
+header {
+  background: linear-gradient(to right, #6a11cb, #2575fc);
+  color: white; padding: 15px; display: flex; justify-content: space-between;
+  align-items: center;
+}
+.header-buttons button {
+  margin: 0 5px; padding: 10px; border-radius: 5px; border: none; cursor: pointer;
+}
+.main { display: flex; height: calc(100vh - 80px); }
+aside {
+  width: 20%; padding: 15px; border-right: 1px solid #ddd; overflow-y: auto;
+}
+#properties { border-left: 1px solid #ddd; }
+.element {
+  background: #007bff; color: white; padding: 10px; margin-bottom: 10px;
+  border-radius: 5px; cursor: grab; text-align: center;
+}
+#canvas {
+  flex: 1; padding: 20px; border: 2px dashed #ccc;
+  margin: 20px; border-radius: 10px; background: #fff;
+  overflow-y: auto; position: relative;
+}
+.drop-highlight {
+  border: 2px dashed #4caf50 !important;
+}
+.placeholder-text {
+  color: gray; text-align: center; font-style: italic;
+}
+.resizable {
+  resize: both; overflow: auto; min-width: 100px; min-height: 50px;
+  border: 1px dashed #bbb; padding: 5px;
+}
+input, select {
+  width: 90%; margin-bottom: 10px; padding: 5px;
+}

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Super Website Builder</title>
+  <link rel="stylesheet" href="styles.css"/>
+</head>
+<body>
+
+  <header>
+    <h1>🚀 Super Website Builder</h1>
+    <div class="header-buttons">
+      <button id="toggleMode">Toggle Dark/Light</button>
+      <button id="undoBtn">Undo</button>
+      <button id="redoBtn">Redo</button>
+      <button id="exportBtn">Export HTML</button>
+      <button id="clearCanvasBtn">Clear Canvas</button>
+    </div>
+  </header>
+
+  <div class="main">
+    <aside>
+      <h3>Elements</h3>
+      <div class="element" draggable="true" data-type="heading">Heading</div>
+      <div class="element" draggable="true" data-type="paragraph">Paragraph</div>
+      <div class="element" draggable="true" data-type="button">Button</div>
+      <div class="element" draggable="true" data-type="image">Image</div>
+      <div class="element" draggable="true" data-type="divider">Divider</div>
+    </aside>
+
+    <section id="canvas" class="dropzone">
+      <p class="placeholder-text">Drag elements here to build your website ✨</p>
+    </section>
+
+    <aside id="properties">
+      <h3>Properties</h3>
+      <div id="propContent">Select an element to edit properties.</div>
+    </aside>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
